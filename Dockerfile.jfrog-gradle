@@ -3,6 +3,6 @@ ENV JFROG_VER=1.43.2
 
 # Install JFROG CLI
 RUN cd /usr/local/bin && \
-    curl -fL https://getcli.jfrog.io $JFROG_VER | sh
+    curl -fL https://getcli.jfrog.io | sh $JFROG_VER
 
 CMD ["bash"]
