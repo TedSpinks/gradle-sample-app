@@ -1,0 +1,7 @@
+FROM gradle:6.7.1-jdk8
+
+# Install JFROG CLI
+RUN cd /usr/local/bin && \
+    curl -fL https://getcli.jfrog.io | sh
+
+CMD ["bash"]
